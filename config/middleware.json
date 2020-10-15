@@ -1,0 +1,17 @@
+{
+  "load": {
+    "before": ["middle","responseTime", "logger", "cors", "responses"],
+    "order": [
+      "middle", "parser"
+    ],
+    "after": ["parser", "router"]
+  },
+  "settings": {
+    "middle": {
+      "enabled": true
+    },
+    "cors": {
+      "origin": ["*"]
+    }
+  }
+}
